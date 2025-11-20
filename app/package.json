@@ -1,6 +1,13 @@
 {
-  "name": "simple-webapp",
+  "name": "pranita.sonawane",
   "version": "1.0.0",
-  "scripts": { "start": "node index.js" },
-  "dependencies": { "express": "^4.18.2" }
+  "description": "DevOps Node.js Application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [],
+  "author": "Pranita Sonawane",
+  "license": "ISC"
 }

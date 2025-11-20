@@ -1,7 +1,14 @@
-FROM public.ecr.aws/library/node:18-alpine
-WORKDIR /app
+# app/Dockerfile
+FROM node:18-bullseye-slim
+ 
+WORKDIR /usr/src/app
+ 
 COPY package*.json ./
 RUN npm install --production
+ 
 COPY . .
-EXPOSE 3000
-CMD ["npm","start"]
+ 
+EXPOSE 80
+ 
+CMD ["node", "app.js"]
+ 
